@@ -13,4 +13,4 @@ pip install -r requirements.txt
 python manage.py collectstatic
 
 # Deactivate the virtual environment
-deactivate
+source venv/bin/deactivate
