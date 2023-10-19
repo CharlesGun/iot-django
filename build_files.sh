@@ -1,4 +1,4 @@
-#!/bin/bash
+# !/bin/bash
 
 # Create a virtual environment
 python -m venv venv
