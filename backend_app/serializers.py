@@ -1,8 +1,14 @@
 from rest_framework import serializers
 from .models import *
 
-class Sensor(serializers.ModelSerializer):
+class SensorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Sensor
-        fields = ["id","value"]
+        fields = ["id","suhu", "lokasi", "kendaraan_id"]
+        depth = 1
+
+class KendaraanSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Kendaraan
+        fields = "__all__"
         depth = 1

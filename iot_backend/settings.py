@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-=pl*uet%ul%z+du30$*1vl@q8t@-5_3=(&auw)bl4&9y!+drq&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost', ".now.sh"]
 
 
 # Application definition
@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'iot_backend.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "bbclfbrpjqxj8y9zrcbc",
-        "USER": "urpbcsqcdd7uf4dp5tf0",
-        "PASSWORD": "ubFU4yAMgyYT7hXmeVbduo9D2m2YbJ",
-        "HOST": "bbclfbrpjqxj8y9zrcbc-postgresql.services.clever-cloud.com", #localhost
+        "NAME": "postgres",
+        "USER": "postgres",
+        "PASSWORD": "s1w2o3r4d56",
+        "HOST": "db.uqsoumaphqlftqgfocqd.supabase.co", #localhost
         "PORT": "5432", #default postgresql port 5432
     }
 }
