@@ -16,11 +16,7 @@
         }
     ],
     "routes": [{
-        "src": "/static/(.*)",
-        "dest": "/static/$1"
-    }, {
         "src": "/(.*)",
         "dest": "iot_backend/wsgi.py"
-    }],
-    "outputDirectory": "staticfiles_build"
+    }]
 }
