@@ -10,7 +10,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Run other build commands
-python manage.py collectstatic --noinput
+python manage.py collectstatic
 
 # Deactivate the virtual environment
 deactivate
