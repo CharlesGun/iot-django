@@ -4,7 +4,7 @@ from .models import *
 class SensorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Sensor
-        fields = ["id","suhu", "lokasi", "kendaraan_id"]
+        fields = "__all__"
         depth = 1
 
 class KendaraanSerializer(serializers.ModelSerializer):
