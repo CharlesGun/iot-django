@@ -86,9 +86,6 @@ DATABASES = {
         "PASSWORD": "s1w2o3r4d56",
         "HOST": "db.uqsoumaphqlftqgfocqd.supabase.co", #localhost
         "PORT": "5432", #default postgresql port 5432,
-        "OPTIONS": {
-            'options': '-c timezone=Asia/Jakarta',
-        },
     }
 }
 
@@ -117,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Jakarta'
 
 USE_I18N = True
 
