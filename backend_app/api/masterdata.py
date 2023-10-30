@@ -2,10 +2,11 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from backend_app.models import *
 from backend_app.serializers import *
+from django.http import QueryDict
 
 @api_view(["POST"])
 def postSensor(request, plat_kendaraan, jenis_kendaraan):
-    data = request.data
+    data = QueryDict(request.body)
     kendaraan, created = Kendaraan.objects.get_or_create(
         plat = plat_kendaraan,
         jenis = jenis_kendaraan
